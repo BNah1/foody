@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foody/config/const.dart';
 import 'package:foody/page/favourite/favourite_body.dart';
-import 'package:foody/page/home/home_body.dart';
+import 'package:foody/page/home/widget/category.dart';
 import 'package:foody/page/seen/seen_body.dart';
 
 class MyApp extends StatefulWidget {
@@ -16,7 +16,7 @@ class _MyAppState extends State<MyApp> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
-    HomeBody(),
+    CategoryPage(),
     FavouriteBody(),
     SeenBody(),
   ];
